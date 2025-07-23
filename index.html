@@ -1,72 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LB's Cleaning Schedule</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LB’s Cleaning Schedule</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 1rem;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .checklist {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    label {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>LB's Cleaning Schedule</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Daily</h2>
-            <ul id="daily-list">
-                <li><input type="checkbox"> Make the beds</li>
-                <li><input type="checkbox"> Do a load of laundry</li>
-                <li><input type="checkbox"> Clean kitchen surfaces</li>
-                <li><input type="checkbox"> Wipe bathroom surfaces</li>
-                <li><input type="checkbox"> 15 minute tidy-up</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Weekly</h2>
-            <ul id="weekly-list">
-                <li><input type="checkbox"> Dust surfaces</li>
-                <li><input type="checkbox"> Clean mirrors</li>
-                <li><input type="checkbox"> Clean kitchen appliances</li>
-                <li><input type="checkbox"> Change bed linen</li>
-                <li><input type="checkbox"> Clean toilets</li>
-                <li><input type="checkbox"> Clean shower/bath</li>
-                <li><input type="checkbox"> Mop floors</li>
-                <li><input type="checkbox"> Empty bins</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Monthly</h2>
-            <ul id="monthly-list">
-                <li><input type="checkbox"> Clean light fittings</li>
-                <li><input type="checkbox"> Wipe doors and skirting boards</li>
-                <li><input type="checkbox"> Clean windows inside</li>
-                <li><input type="checkbox"> Vacuum under furniture</li>
-                <li><input type="checkbox"> Clean inside bins</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Every 3–6 Months</h2>
-            <ul id="3-6-month-list">
-                <li><input type="checkbox"> Clean behind large furniture/appliances</li>
-                <li><input type="checkbox"> Clean inside oven</li>
-                <li><input type="checkbox"> Wash pillows and duvets</li>
-                <li><input type="checkbox"> Declutter wardrobes</li>
-                <li><input type="checkbox"> Deep clean upholstery</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Yearly</h2>
-            <ul id="yearly-list">
-                <li><input type="checkbox"> Clean windows outside</li>
-                <li><input type="checkbox"> Clean gutters</li>
-                <li><input type="checkbox"> Clean carpets</li>
-                <li><input type="checkbox"> Clean behind radiators</li>
-                <li><input type="checkbox"> Organise attic/loft</li>
-            </ul>
-        </section>
-    </main>
-    <script src="script.js"></script>
+  <h1>LB’s Cleaning Schedule</h1>
+
+  <div class="checklist" data-interval="daily">
+    <h2>Daily Tasks</h2>
+    <label><input type="checkbox"> Make bed</label>
+    <label><input type="checkbox"> Wipe kitchen surfaces</label>
+    <label><input type="checkbox"> Empty bins if needed</label>
+    <label><input type="checkbox"> Tidy up</label>
+  </div>
+
+  <div class="checklist" data-interval="weekly">
+    <h2>Weekly Tasks</h2>
+    <label><input type="checkbox"> Vacuum floors</label>
+    <label><input type="checkbox"> Mop hard floors</label>
+    <label><input type="checkbox"> Clean bathroom</label>
+    <label><input type="checkbox"> Change bedsheets</label>
+  </div>
+
+  <div class="checklist" data-interval="monthly">
+    <h2>Monthly Tasks</h2>
+    <label><input type="checkbox"> Clean fridge</label>
+    <label><input type="checkbox"> Wipe skirting boards</label>
+    <label><input type="checkbox"> Clean windows (inside)</label>
+  </div>
+
+  <div class="checklist" data-interval="yearly">
+    <h2>Yearly Tasks</h2>
+    <label><input type="checkbox"> Deep clean oven</label>
+    <label><input type="checkbox"> Clean behind furniture</label>
+    <label><input type="checkbox"> Wash curtains</label>
+  </div>
+
+  <div class="checklist" data-interval="every-4-months">
+    <h2>Every 4 Months</h2>
+    <label><input type="checkbox"> Rotate mattress</label>
+    <label><input type="checkbox"> Clean extractor fans</label>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
